@@ -1,0 +1,22 @@
+{
+  "name": "zalan",
+  "version": "1.0.0",
+  "description": "playground",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nata-dotcom/zalan.git"
+  },
+  "author": "Nata",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nata-dotcom/zalan/issues"
+  },
+  "homepage": "https://github.com/nata-dotcom/zalan#readme",
+  "devDependencies": {
+    "cypress": "^13.3.3"
+  }
+}
