@@ -1,0 +1,8 @@
+{
+  "cookieBlock": "#notice-cookie-block",
+  "cookieAccept": "#btn-cookie-allow",
+  "newsletterModal": "div.newsletter-homepage__content.js-newsletter-modal-trigger",
+  "newsletterModalClose": "span.newsletter-homepage__close.abs-position.js-close-newsletter",
+  "searchIcon": ".block-search",
+  "searchField": "div.field.search"
+}

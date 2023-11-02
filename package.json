@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/nata-dotcom/zalan#readme",
   "devDependencies": {
-    "cypress": "^13.3.3"
+    "cypress": "^13.3.3",
+    "mocha": "^10.2.0"
   }
 }

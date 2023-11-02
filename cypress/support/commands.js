@@ -23,3 +23,16 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('clickOnButton',(element,button) => {
+    cy.get(element).should('exist');
+    cy.get(button).click()
+    cy.get(element).should('not.be.visible') })
+
+    Cypress.Commands.add('getListArray',(locatorlist)=>{
+        (locatorlist)
+        .should(($els) => {const result = $els.toArray().map(el => el.innerText)
+            console.log('THIS array we have read',result)
+        return result
+        })  
+})    
