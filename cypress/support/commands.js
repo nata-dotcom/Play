@@ -31,8 +31,8 @@ Cypress.Commands.add('clickOnButton',(element,button) => {
 
     Cypress.Commands.add('getListArray',(locatorlist)=>{
         (locatorlist)
-        .should(($els) => {const result = $els.toArray().map(el => el.innerText)
-            console.log('THIS array we have read',result)
-        return result
+        .should(($els) => {const resultat = $els.toArray().map(el => el.innerText)
+            console.log('THIS array we have read',resultat)
+        return resultat
         })  
 })    

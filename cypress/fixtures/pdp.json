@@ -1,0 +1,5 @@
+{
+  "addToCart": "#product-addtocart-button",
+  "upsellProducts": "div.products.wrapper.grid.products-grid.products-upsell",
+  "relatedProducts": "div.products.wrapper.grid.products-grid.products-related"
+}
