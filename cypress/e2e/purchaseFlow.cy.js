@@ -1,8 +1,7 @@
 
 describe('open homepage, PLP, search for item', () => {
   beforeEach(() => {
-    cy.visit('https://www.bjornaxen.se/')
-    cy.intercept('POST','*/checkout/cart/add/*').as('toCart')
+    cy.visit('/')
     cy.fixture('pdp.json').as('elementsPdp')
     cy.fixture('homepage.json').as('elements')
     cy.get('@elements').then((element)=>{
@@ -22,11 +21,9 @@ describe('open homepage, PLP, search for item', () => {
    cy.get('div.cart-empty').should('not.exist')
    cy.get('.cart.item').should('be.visible')
    cy.get('ul.checkout.methods.items.checkout-methods-items>li>button').should('be.enabled').click()
-
-  //  cy.url().then((url =>{
-  //   expect(url).to.contain('checkout/klarna')
-  //   }))
-
+   cy.visit('/checkout/klarna')
+   cy.url().then((url =>{
+    expect(url).to.contain('checkout/klarna')
+    }))
   })
-
 })

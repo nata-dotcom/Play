@@ -1,7 +1,7 @@
 
 describe('open homepage, PLP, search for item', () => {
   beforeEach(() => {
-    cy.visit('https://www.bjornaxen.se/')
+    cy.visit('/')
     cy.intercept('POST','https://stats.ksearchnet.com/analytics/n-search/search?*').as('search')
     cy.fixture('homepage.json').as('elements')
     cy.get('@elements').then((element)=>{
