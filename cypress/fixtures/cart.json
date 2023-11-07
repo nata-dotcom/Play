@@ -1,0 +1,5 @@
+{
+  "emptyCart": "div.cart-empty",
+  "cartItem": ".cart.item",
+  "toCheckoutButton": "ul.checkout.methods.items.checkout-methods-items>li>button"
+}
