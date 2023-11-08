@@ -26,7 +26,7 @@ describe('open homepage, PDP, add to cart and go to checkout', () => {
     cy.get(element.cartItem).should('be.visible')
     cy.get(element.toCheckoutButton).should('be.enabled').click()
    })
-   
+  
    cy.visit('/checkout/klarna')
    cy.url().then((url =>{
     expect(url).to.contain('checkout/klarna')
