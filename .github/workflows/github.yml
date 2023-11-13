@@ -1,4 +1,4 @@
-name: hello_workflow
+name: first_workflow
 on: [push]
 jobs:
   print-hello:
