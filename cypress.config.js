@@ -7,6 +7,7 @@ module.exports = defineConfig({
   viewportHeight: 720,
 
   e2e: {
+    baseUrl: "https://www.bjornaxen.se/",
     setupNodeEvents(on, config) {
       // implement node event listeners here
       
