@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Chrome
+      - name: cypress run
         uses: cypress-io/github-action@v6
         timeout-minutes: 10
         with:
