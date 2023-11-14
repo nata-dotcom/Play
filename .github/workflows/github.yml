@@ -1,9 +1,8 @@
-name: Chrome Docker
+name: first run with github
 
 on: [push, workflow_dispatch]
 
 jobs:
-  # run Chrome inside a Docker container
   tests:
     runs-on: ubuntu-22.04
     # https://github.com/cypress-io/cypress-docker-images
