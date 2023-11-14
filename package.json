@@ -1,23 +1,24 @@
 {
-  "name": "zalan",
+  "name": "play",
   "version": "1.0.0",
   "description": "playground",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "testrun": "npx cypress run --config-file prod.config.js --e2e"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nata-dotcom/zalan.git"
+    "url": "git+https://github.com/nata-dotcom/play.git"
   },
   "author": "Nata",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nata-dotcom/zalan/issues"
+    "url": "https://github.com/nata-dotcom/play/issues"
   },
-  "homepage": "https://github.com/nata-dotcom/zalan#readme",
+  "homepage": "https://github.com/nata-dotcom/play#readme",
   "devDependencies": {
     "cypress": "^13.3.3",
     "mocha": "^10.2.0"
   }
 }
+
