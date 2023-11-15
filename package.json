@@ -4,7 +4,8 @@
   "description": "playground",
   "main": "index.js",
   "scripts": {
-    "testrun": "npx cypress run --config-file prod.config.js --e2e"
+    "prod:run": "CYPRESS_BASE_URL=https://www.bjornaxen.se npx cypress run",
+    "stg:run": "CYPRESS_BASE_URL=https://www.amazon.se npx cypress run"
   },
   "repository": {
     "type": "git",
@@ -15,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/nata-dotcom/play/issues"
   },
-  "homepage": "https://github.com/nata-dotcom/play#readme",
+  "homepage": "https://github.com/nata-dotcom/play",
   "devDependencies": {
     "cypress": "^13.3.3",
     "mocha": "^10.2.0"

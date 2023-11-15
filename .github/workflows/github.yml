@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: npm run testrun
+      - name: npm run prod:run
         uses: cypress-io/github-action@v6
         timeout-minutes: 10
         with:
