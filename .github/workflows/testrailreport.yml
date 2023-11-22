@@ -1,0 +1,31 @@
+name: cypress-tests-report-testrail
+on: [workflow_dispatch]
+jobs:
+  execute-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Cypress run
+        id: cypress
+        uses: cypress-io/github-action@v4
+        with:
+          command: npm run testrail:run
+      - name: Python setup
+        if: always()
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'
+      - name: TestRail CLI upload results
+        if: always()
+        run: |
+          pip install trcli
+          trcli -y \
+            -h https://vaimobe.testrail.io \
+            --project "Nordics BjornAxen" \
+            -u nataliia.ostberg@vaimo.com \
+            -k Hg2gU/JrBlSSHVJ5X1aa-zz0gB4LUIGcuJmoz7GX8 \
+            parse_junit \
+            --title "Automated Tests from GitHub workflow" \
+            --run-description ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }} \
+            -f "reports/junit*.xml"

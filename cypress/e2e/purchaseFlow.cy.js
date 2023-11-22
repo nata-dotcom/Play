@@ -12,7 +12,7 @@ describe('open homepage, PDP, add to cart and go to checkout', () => {
      })      
 })  
 
-  it('open product page and add to cart and go to checkout', () => {
+  it('C201661 open product page and add to cart and go to checkout', () => {
    cy.visit('/just-right-hairspray') 
    cy.get('@elementsPdp').then((element)=>{
     cy.get(element.upsellProducts).should('be.visible')

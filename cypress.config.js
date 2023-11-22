@@ -6,6 +6,15 @@ module.exports = defineConfig({
   viewportWidth: 1280,
   viewportHeight: 720,
 
+  "reporter": "junit",
+  "reporterOptions": {
+  "host": "https://vaimobe.testrail.io ",
+  "username": "nataliia.ostberg@vaimo.com ",
+  "password": "helloThereTestr13",
+  "project": "Nordics BjornAxen",
+  "suiteId": 3848,
+  },
+
   e2e: {
     baseUrl: "https://www.bjornaxen.se",
 
