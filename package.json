@@ -8,6 +8,7 @@
     "stg:run": "CYPRESS_BASE_URL=https://www.amazon.se npx cypress run",
     "cleanup": "rm -rf reports",
     "testrail:run": "npx cypress run --reporter junit --reporter-options 'mochaFile=reports/TEST-[hash].xml'",
+    "trgithub:run": "CYPRESS_BASE_URL=https://www.bjornaxen.se npx cypress run --reporter junit --reporter-options 'mochaFile=reports/TEST-[hash].xml'",
     "merge:report": "junitparser merge --glob 'reports/TEST-*' 'reports/junit-report.xml'",
     "post:testrail":"trcli -y -h https://vaimobe.testrail.io --project 'Nordics BjornAxen' -u nataliia.ostberg@vaimo.com -k Hg2gU/JrBlSSHVJ5X1aa-zz0gB4LUIGcuJmoz7GX8 parse_junit --title 'Cypress Automated Test Run' -f './reports/junit-report.xml'"
   },

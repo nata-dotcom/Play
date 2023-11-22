@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="12.640" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-11-22T11:18:05" tests="0" file="cypress/e2e/mobile/browsingFlow.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="mobile browsing" timestamp="2023-11-22T11:18:05" tests="3" time="12.627" failures="0">
+    <testcase name="mobile browsing open category page and get the list of categories" time="5.454" classname="open category page and get the list of categories">
+    </testcase>
+    <testcase name="mobile browsing check if search works and return results" time="4.672" classname="check if search works and return results">
+    </testcase>
+    <testcase name="mobile browsing open product page and get the list of salongs" time="2.149" classname="open product page and get the list of salongs">
+    </testcase>
+  </testsuite>
+</testsuites>

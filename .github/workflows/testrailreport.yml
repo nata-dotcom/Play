@@ -20,6 +20,7 @@ jobs:
         if: always()
         run: |
           pip install trcli
+          npm run merge:report
           trcli -y \
             -h https://vaimobe.testrail.io \
             --project "Nordics BjornAxen" \
@@ -28,4 +29,4 @@ jobs:
             parse_junit \
             --title "Automated Tests from GitHub workflow" \
             --run-description ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }} \
-            -f "reports/junit*.xml"
+            -f "./reports/junit-report.xml"
