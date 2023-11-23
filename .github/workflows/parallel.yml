@@ -1,4 +1,4 @@
-name: Cypress Tests
+name: Cypress Tests parallel
 
 on: push
 
@@ -14,7 +14,6 @@ jobs:
         with:
           # Disable running of tests within install job
           runTests: false
-          build: npm run build
 
       - name: Save build folder
         uses: actions/upload-artifact@v3

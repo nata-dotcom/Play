@@ -1,4 +1,4 @@
-name: Cypress Tests
+name: Cypress Tests parallel2
 on: [push]
 jobs:
   cypress-run:
