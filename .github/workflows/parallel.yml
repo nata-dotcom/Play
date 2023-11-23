@@ -15,13 +15,6 @@ jobs:
           # Disable running of tests within install job
           runTests: false
 
-      - name: Save build folder
-        uses: actions/upload-artifact@v3
-        with:
-          name: build
-          if-no-files-found: error
-          path: dist
-
   cypress-run:
             runs-on: ubuntu-22.04
             needs: install
