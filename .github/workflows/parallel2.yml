@@ -1,5 +1,5 @@
 name: Cypress Tests parallel2
-on: [push]
+on: [workflow_dispatch]
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
