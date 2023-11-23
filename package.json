@@ -4,7 +4,8 @@
   "description": "playground",
   "main": "index.js",
   "scripts": {
-    "prod:run": "CYPRESS_BASE_URL=https://www.bjornaxen.se npx cypress run",
+    "prod:run:": "CYPRESS_BASE_URL=https://www.bjornaxen.se npx cypress run",
+    "prod:runcloud": "npx cypress run --record --key 6aa84b42-275a-4325-baab-f452000d543b",
     "stg:run": "CYPRESS_BASE_URL=https://www.amazon.se npx cypress run",
     "cleanup": "rm -rf reports",
     "testrail:run": "npx cypress run --reporter junit --reporter-options 'mochaFile=reports/TEST-[hash].xml'",
