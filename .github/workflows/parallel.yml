@@ -1,4 +1,4 @@
-name: Cypress Tests parallel run with default brtowser
+name: Cypress Tests parallel run with default browser
 
 on: [workflow_dispatch]
 
@@ -33,7 +33,7 @@ jobs:
                 with:
                   record: true
                   parallel: true
-                  group: 'UI-Chrome'
+                  group: 'UI-Electron'
                   start: npm run prod:runcloud
                 env:
                     # For recording and parallelization to work you must set your CYPRESS_RECORD_KEY

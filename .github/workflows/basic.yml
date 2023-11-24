@@ -1,4 +1,4 @@
-name: Cypress simple tests run
+name: Cypress simple tests run on Edge
 
 on: [workflow_dispatch]
 
