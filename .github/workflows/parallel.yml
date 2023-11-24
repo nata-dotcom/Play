@@ -28,12 +28,12 @@ jobs:
               - name: Checkout
                 uses: actions/checkout@v4
         
-              - name: npm run prod:runcloud
+              - name: run tests
                 uses: cypress-io/github-action@v6
                 with:
                   record: true
                   parallel: true
                   group: 'UI-Chrome'
-                  start: npm start
+                  start: npm run key & npm run prod:runcloud
         
               

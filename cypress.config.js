@@ -2,7 +2,6 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   projectId: 'qdxer4',
-  CYPRESS_RECORD_KEY:'6aa84b42-275a-4325-baab-f452000d543b',
   defaultCommandTimeout: 10000,
   requestTimeout: 15000,	
   viewportWidth: 1280,
