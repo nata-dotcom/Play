@@ -1,6 +1,6 @@
 name: Cypress Tests parallel run with default brtowser
 
-on: [push,workflow_dispatch]
+on: [workflow_dispatch]
 
 jobs:
   install:
