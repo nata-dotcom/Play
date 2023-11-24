@@ -34,6 +34,6 @@ jobs:
                   record: true
                   parallel: true
                   group: 'UI-Chrome'
-                  start: npm run start & npm run prod:runcloud
+                  start: npm run prod:runcloud
         
               

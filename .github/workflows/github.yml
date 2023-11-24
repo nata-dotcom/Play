@@ -1,6 +1,6 @@
 name: first run with github
 
-on: [push, workflow_dispatch]
+on: [workflow_dispatch]
 
 jobs:
   tests:
