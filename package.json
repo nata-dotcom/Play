@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "key": "export CYPRESS_RECORD_KEY=4531cf53-6db9-48e9-bd61-3d2ae91f76cf",
-    "prod:run": "CYPRESS_BASE_URL=https://www.bjornaxen.se npx cypress run  --browser firefox",
+    "prod:run": "CYPRESS_BASE_URL=https://www.bjornaxen.se npx cypress run  --browser edge",
     "prod:runcloud": "npx cypress run --record",
     "stg:run": "CYPRESS_BASE_URL=https://www.amazon.se npx cypress run",
     "cleanup": "rm -rf reports",

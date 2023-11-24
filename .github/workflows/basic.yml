@@ -1,4 +1,4 @@
-name: Cypress simple tests run with Firefox
+name: Cypress simple tests run
 
 on: [workflow_dispatch]
 
@@ -10,12 +10,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+#
+#      - uses: browser-actions/setup-firefox@v1
+#      - run: firefox --version
 
-      - uses: browser-actions/setup-firefox@v1
-      - run: firefox --version
-      
       - name: npm run prod:run
         uses: cypress-io/github-action@v6
         timeout-minutes: 10
         with:
-          browser: firefox
+          browser: edge
