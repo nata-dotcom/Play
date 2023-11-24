@@ -1,6 +1,6 @@
 name: Cypress Tests parallel
 
-on: push
+on: [push,workflow_dispatch]
 
 jobs:
   install:
