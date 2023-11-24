@@ -1,4 +1,4 @@
-name: first run with github
+name: simple tests run with Firefox
 
 on: [workflow_dispatch]
 
@@ -14,4 +14,4 @@ jobs:
         uses: cypress-io/github-action@v6
         timeout-minutes: 10
         with:
-          browser: chrome
+          browser: firefox

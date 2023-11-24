@@ -1,4 +1,4 @@
-name: cypress-tests-report-testrail
+name: Cypress tests run on Chrome with reporting results in Testrail
 on: [workflow_dispatch]
 jobs:
   execute-tests:
